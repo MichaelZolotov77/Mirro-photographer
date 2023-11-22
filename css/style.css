@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SourceSerifPro-Regular";
+  src: url(../fonts/SourceSerifPro-Regular.ttf);
+  font-weight: 400;
+}
+
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #292C32;
+  font-size: 1.6rem;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.nav {
+  padding: 1rem 12rem;
+}
+
+.nav__container {
+  display: grid;
+  grid-template-columns: 7fr repeat(6, 1fr);
+  padding: 1rem 1.6rem;
+}
+
+.nav__link {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-decoration: none;
+  text-align: center;
+  color: #3A5F56;
+}
+
+.nav__logo {
+  width: 113px;
+  height: 30px;
+}
