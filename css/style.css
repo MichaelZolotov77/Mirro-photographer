@@ -32,18 +32,30 @@ body {
   margin: 0 auto;
 }
 
+.btn {
+  font-size: 1.6rem;
+  font-weight: 400;
+  border: 0;
+  border-radius: .6rem;
+  background: #3A5F56;
+  color: #FFFFFF;
+  padding: 1rem 4.3rem;
+}
+
 .nav {
   padding: 1rem 12rem;
+  background-color: #F4F3F0;
 }
 
 .nav__container {
   display: grid;
   grid-template-columns: 7fr repeat(6, 1fr);
   padding: 1rem 1.6rem;
+  align-items: center;
+  column-gap: 2rem;
 }
 
 .nav__link {
-  display: block;
   font-size: 1.6rem;
   font-weight: 300;
   text-decoration: none;
@@ -51,7 +63,31 @@ body {
   color: #3A5F56;
 }
 
+.nav__btn {
+  position: relative;
+}
+
 .nav__logo {
   width: 113px;
   height: 30px;
+}
+
+.nav__basket {
+  position: absolute;
+  top: .9rem;
+  left: 1.4rem;
+}
+
+.nav__circle {
+  position: absolute;
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  color: #3A5F56;
+  background-color: #FFFFFF;
+  border-radius: 1rem;
+  top: .9rem;
+  left: 8.5rem;
+  justify-content: center;
+  align-items: flex-end;
 }
