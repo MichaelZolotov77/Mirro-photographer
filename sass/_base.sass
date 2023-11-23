@@ -1,20 +1,20 @@
 
-// @mixin respond($breakpoint)
-// @if $breakpoint == phone
-//     @media only screen and (max-width: 420px)
-//         @content
+@mixin respond($breakpoint)
+    @if $breakpoint == phone
+        @media only screen and (max-width: 420px)
+            @content
 
-// @if $breakpoint == tab-port
-//     @media only screen and (max-width: 830px)
-//         @content
+    @if $breakpoint == tab-port
+        @media only screen and (max-width: 830px)
+            @content
 
-// @if $breakpoint == tab-land
-//     @media only screen and (max-width: 1170px)
-//         @content
+    @if $breakpoint == tab-land
+        @media only screen and (max-width: 1170px)
+            @content
 
-// @if $breakpoint == big-screen
-//     @media only screen and (min-width: 1800px)
-//         @content
+    @if $breakpoint == big-screen
+        @media only screen and (min-width: 1440px)
+            @content
 
 // @include respond(tab-land)
 
@@ -41,10 +41,6 @@
 
 html
     font-size: 62.5%
-    // @include respond(tab-land)
-    //     font-size: 50%
-    // @include respond(phone)
-    //     font-size: 40%
 
 body
     font-family: "Roboto", sans-serif
@@ -64,4 +60,5 @@ body
     background: $color-main
     color: $color-white
     padding: 1rem 4.3rem
+    cursor: pointer
 

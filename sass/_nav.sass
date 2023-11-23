@@ -1,6 +1,8 @@
 .nav
-    padding: 1rem 12rem
-    background-color: $color-gray
+    padding: 1rem 8vw
+    background-color: $color-white
+    @include respond(big-screen)
+        padding: 1rem 12rem
     &__container
         display: grid
         grid-template-columns: 7fr repeat(6, 1fr)

@@ -1,3 +1,18 @@
+h1 {
+  font-size: 4.8rem;
+  font-weight: 400;
+  line-height: 120%;
+  font-family: SourceSerifPro-Regular;
+  color: #3A5F56;
+}
+
+h4 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #292C32;
+  line-height: 140%;
+}
+
 @font-face {
   font-family: "Roboto";
   src: url(../fonts/Roboto.ttf);
@@ -40,11 +55,18 @@ body {
   background: #3A5F56;
   color: #FFFFFF;
   padding: 1rem 4.3rem;
+  cursor: pointer;
 }
 
 .nav {
-  padding: 1rem 12rem;
-  background-color: #F4F3F0;
+  padding: 1rem 8vw;
+  background-color: #FFFFFF;
+}
+
+@media only screen and (min-width: 1440px) {
+  .nav {
+    padding: 1rem 12rem;
+  }
 }
 
 .nav__container {
@@ -90,4 +112,72 @@ body {
   left: 8.5rem;
   justify-content: center;
   align-items: flex-end;
+}
+
+.hi {
+  position: relative;
+  overflow: hidden;
+}
+
+.hi__container {
+  background-color: #F4F3F0;
+  padding: 10rem 8vw;
+  display: grid;
+  grid-template-areas: ". img" "title img" "text img" "btn img" ". img";
+  gap: 1.5rem 6.4rem;
+  justify-items: start;
+}
+
+@media only screen and (min-width: 1440px) {
+  .hi__container {
+    padding: 10rem 12rem;
+  }
+}
+
+.hi__title {
+  grid-area: title;
+}
+
+.hi__text {
+  grid-area: text;
+}
+
+.hi__btn {
+  z-index: 1;
+  grid-area: btn;
+}
+
+.hi__btn:hover {
+  color: #000000;
+}
+
+.hi__img {
+  grid-area: img;
+  width: 38vw;
+}
+
+@media only screen and (min-width: 1440px) {
+  .hi__img {
+    width: 55.2rem;
+  }
+}
+
+.hi__grad-1 {
+  position: absolute;
+  width: 56rem;
+  height: 50rem;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(58, 95, 86, 0.55) 0%, rgba(58, 95, 86, 0) 100%);
+  flex-shrink: 0;
+  top: -4rem;
+  right: -10rem;
+}
+
+.hi__grad-2 {
+  position: absolute;
+  width: 72rem;
+  height: 81rem;
+  flex-shrink: 0;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(184, 125, 88, 0.8) 0%, rgba(184, 125, 88, 0) 100%);
+  left: -22rem;
+  bottom: -44rem;
 }
