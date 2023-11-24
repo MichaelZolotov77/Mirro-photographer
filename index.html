@@ -8,9 +8,12 @@
   </head>
   <body>
     <div class="container">
+      <!-- nav -->
       <nav class="nav">
         <div class="nav__container">
-          <img class="nav__logo" src="icons/logo.svg" alt="logo" />
+          <svg class="nav__logo">
+            <use xlink:href="icons/symbol-defs.svg#icon-logo"></use>
+          </svg>
           <a href="#" class="nav__link">Presets</a>
           <a href="#" class="nav__link">Prints</a>
           <a href="#" class="nav__link">Store</a>
@@ -18,11 +21,14 @@
           <a href="#" class="nav__link">Contact</a>
           <button class="btn nav__btn">
             Cart
-            <img src="icons/basket.svg" alt="logo" class="nav__basket" />
+            <svg class="nav__basket">
+              <use xlink:href="icons/symbol-defs.svg#icon-basket"></use>
+            </svg>
             <div class="nav__circle">0</div>
           </button>
         </div>
       </nav>
+      <!-- Hi, i`m Mirro -->
       <section class="hi">
         <div class="hi__grad-1"></div>
         <div class="hi__grad-2"></div>
@@ -41,7 +47,168 @@
           <img src="images/photo-mirro.png" alt="photo" class="hi__img" />
         </div>
       </section>
-      <section class="services">Services</section>
+      <section class="services">
+        <div class="services__container">
+          <!-- title -->
+          <div class="services__container-title">
+            <svg class="services__icon services__icon_title">
+              <use xlink:href="icons/symbol-defs.svg#icon-zigzag"></use>
+            </svg>
+            <h2 class="services__title">Services</h2>
+
+            <h4 class="services__title-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique. Duis cursus,
+              mi quis viverra ornare, eros dolor interdum nulla.
+            </h4>
+          </div>
+          <!-- cards -->
+          <div class="services__cards">
+            <!-- card -->
+            <div class="services__card">
+              <div class="services__circle">
+                <svg class="services__icon">
+                  <use xlink:href="icons/symbol-defs.svg#icon-wedding"></use>
+                </svg>
+              </div>
+              <h3 class="services__card-title">Wedding Photography</h3>
+              <h4 class="services__card-text">
+                Wedding photography is often called the bread and butter of
+                photographers — but that doesn't mean it has to be boring. Quite
+                the opposite!
+              </h4>
+              <div class="services__read-more">
+                Read more
+                <svg class="services__arrow">
+                  <use xlink:href="icons/symbol-defs.svg#icon-arrow"></use>
+                </svg>
+              </div>
+            </div>
+            <!-- card -->
+            <div class="services__card">
+              <div class="services__circle">
+                <svg class="services__icon">
+                  <use xlink:href="icons/symbol-defs.svg#icon-sports"></use>
+                </svg>
+              </div>
+              <h3 class="services__card-title">Sports Photography</h3>
+              <h4 class="services__card-text">
+                Sports photography is awesome. Sitting on the sidelines with a
+                massive telephoto allows me to get right into the action — I
+                love shooting sports where there's a lot of explosive movement.
+              </h4>
+              <div class="services__read-more">
+                Read more
+                <svg class="services__arrow">
+                  <use xlink:href="icons/symbol-defs.svg#icon-arrow"></use>
+                </svg>
+              </div>
+            </div>
+            <!-- card -->
+            <div class="services__card">
+              <div class="services__circle">
+                <svg class="services__icon">
+                  <use xlink:href="icons/symbol-defs.svg#icon-portrait"></use>
+                </svg>
+              </div>
+              <h3 class="services__card-title">Portrait Photography</h3>
+              <h4 class="services__card-text">
+                Who doesn't love portrait photography? I love being able to
+                capture that expression, quirk, smile or whatever, that sort of
+                defines a person.
+              </h4>
+              <div class="services__read-more">
+                Read more
+                <svg class="services__arrow">
+                  <use xlink:href="icons/symbol-defs.svg#icon-arrow"></use>
+                </svg>
+              </div>
+            </div>
+            <!-- card -->
+            <div class="services__card">
+              <div class="services__circle">
+                <svg class="services__icon">
+                  <use
+                    xlink:href="icons/symbol-defs.svg#icon-architecture"
+                  ></use>
+                </svg>
+              </div>
+              <h3 class="services__card-title">Architecture Photography</h3>
+              <h4 class="services__card-text">
+                The nice thing about shooting architecture (in my opinion) is
+                that it's so easy to do. Seriously, just pick up your camera and
+                get out there.
+              </h4>
+              <div class="services__read-more">
+                Read more
+                <svg class="services__arrow">
+                  <use xlink:href="icons/symbol-defs.svg#icon-arrow"></use>
+                </svg>
+              </div>
+            </div>
+            <!-- card -->
+            <div class="services__card">
+              <div class="services__circle">
+                <svg class="services__icon">
+                  <use xlink:href="icons/symbol-defs.svg#icon-animal"></use>
+                </svg>
+              </div>
+              <h3 class="services__card-title">Animal Photography</h3>
+              <h4 class="services__card-text">
+                Whenever I'm travelling I always make sure to pack gear that
+                allows me to capture the local wildlife. The eagle that takes
+                flight in this picture is probably my most prized image.
+              </h4>
+              <div class="services__read-more">
+                Read more
+                <svg class="services__arrow">
+                  <use xlink:href="icons/symbol-defs.svg#icon-arrow"></use>
+                </svg>
+              </div>
+            </div>
+            <!-- card -->
+            <div class="services__card">
+              <div class="services__circle">
+                <svg class="services__icon">
+                  <use xlink:href="icons/symbol-defs.svg#icon-food"></use>
+                </svg>
+              </div>
+              <h3 class="services__card-title">Food Photography</h3>
+              <h4 class="services__card-text">
+                I do food photography for blogs, restaurants, influencers,
+                YouTube channels — but most importantly (if I manage to cook
+                something that looks good) — I do food photography for myself.
+              </h4>
+              <div class="services__read-more">
+                Read more
+                <svg class="services__arrow">
+                  <use xlink:href="icons/symbol-defs.svg#icon-arrow"></use>
+                </svg>
+              </div>
+            </div>
+            <!-- card -->
+            <div class="services__card">
+              <div class="services__circle">
+                <svg class="services__icon">
+                  <use xlink:href="icons/symbol-defs.svg#icon-nature"></use>
+                </svg>
+              </div>
+              <h3 class="services__card-title">Nature Photography</h3>
+              <h4 class="services__card-text">
+                Landscape photography just never gets old. Someone told me that
+                those are the kinds of pictures you never look. Well, I don't
+                agree.
+              </h4>
+              <div class="services__read-more">
+                Read more
+                <svg class="services__arrow">
+                  <use xlink:href="icons/symbol-defs.svg#icon-arrow"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="preset_store">Preset store</section>
       <section class="contact">Contact</section>
       <footer>Footer</footer>
