@@ -318,10 +318,23 @@ body {
   position: relative;
   overflow: hidden;
   padding: 10rem 8.3vw;
+  background-color: #F4F3F0;
 }
 
 @media only screen and (min-width: 1440px) {
   .preset-store {
     padding: 10rem 12rem;
   }
+}
+
+.preset-store__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+  grid-template-rows: repeat(auto-fit, 44rem);
+  gap: 1.6rem;
+}
+
+.preset-store__card-cont {
+  padding: 3rem;
+  background-color: #FFFFFF;
 }
