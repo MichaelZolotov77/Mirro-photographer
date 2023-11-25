@@ -1,7 +1,17 @@
 .services
+    position: relative
+    overflow: hidden
     padding: 10rem 8.3vw
     @include respond(big-screen)
         padding: 10rem 12rem
+    &__grad
+        position: absolute
+        width: 80rem
+        height: 66rem
+        background: radial-gradient(50% 50% at 50% 50%, rgba(58, 95, 86, 0.38) 0%, rgba(58, 95, 86, 0.00) 100%)
+        bottom: -33.5rem
+        left: -46rem
+
     &__container
         display: grid
         grid-template-columns: repeat(3, 1fr)
@@ -13,8 +23,6 @@
         justify-items: center
         row-gap: 1.5rem
         margin-bottom: 4rem
-    &__title
-        
     &__title-text
         text-align: center
         width: 59rem

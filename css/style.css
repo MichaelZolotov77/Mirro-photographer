@@ -74,6 +74,30 @@ body {
   cursor: pointer;
 }
 
+.container-title {
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  justify-items: center;
+  row-gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.container-title__header {
+  color: #DB343B;
+}
+
+.container-title__icon {
+  width: 16rem;
+  height: 2rem;
+}
+
+.container-title__text {
+  text-align: center;
+  width: 59rem;
+}
+
 .nav {
   padding: 1rem 8vw;
   background-color: #FFFFFF;
@@ -201,6 +225,8 @@ body {
 }
 
 .services {
+  position: relative;
+  overflow: hidden;
   padding: 10rem 8.3vw;
 }
 
@@ -208,6 +234,15 @@ body {
   .services {
     padding: 10rem 12rem;
   }
+}
+
+.services__grad {
+  position: absolute;
+  width: 80rem;
+  height: 66rem;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(58, 95, 86, 0.38) 0%, rgba(58, 95, 86, 0) 100%);
+  bottom: -33.5rem;
+  left: -46rem;
 }
 
 .services__container {
@@ -277,4 +312,16 @@ body {
 .services__arrow {
   width: 2rem;
   height: 1rem;
+}
+
+.preset-store {
+  position: relative;
+  overflow: hidden;
+  padding: 10rem 8.3vw;
+}
+
+@media only screen and (min-width: 1440px) {
+  .preset-store {
+    padding: 10rem 12rem;
+  }
 }
