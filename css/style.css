@@ -250,21 +250,6 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.services__container-title {
-  display: grid;
-  grid-template-rows: repeat(3, min-content);
-  grid-column: 1 / -1;
-  grid-row: 1 / 2;
-  justify-items: center;
-  row-gap: 1.5rem;
-  margin-bottom: 4rem;
-}
-
-.services__title-text {
-  text-align: center;
-  width: 59rem;
-}
-
 .services__cards {
   grid-column: 1 / -1;
   grid-row: 2 / 3;
@@ -289,16 +274,6 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 1rem;
-}
-
-.services__icon {
-  width: 2.4rem;
-  height: 2.4rem;
-}
-
-.services__icon_title {
-  width: 16rem;
-  height: 2rem;
 }
 
 .services__card-title {
@@ -327,6 +302,12 @@ body {
   }
 }
 
+.preset-store__container {
+  display: grid;
+  grid-template-rows: repeat(3, max-content);
+  justify-items: center;
+}
+
 .preset-store__cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
@@ -334,7 +315,31 @@ body {
   gap: 1.6rem;
 }
 
+.preset-store__img {
+  display: inline-block;
+  width: 100%;
+}
+
+.preset-store__card {
+  border-radius: 1rem;
+}
+
 .preset-store__card-cont {
-  padding: 3rem;
+  height: 20vh;
+  padding: 3rem 3rem 0 3rem;
   background-color: #FFFFFF;
+}
+
+.preset-store__arrow {
+  width: 2rem;
+  height: 1rem;
+}
+
+.preset-store__grad {
+  position: absolute;
+  width: 50rem;
+  height: 50rem;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(219, 52, 59, 0.3) 0%, rgba(219, 52, 59, 0) 100%);
+  right: -21rem;
+  bottom: -20rem;
 }
