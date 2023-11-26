@@ -276,6 +276,11 @@ body {
   margin-bottom: 1rem;
 }
 
+.services__icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
 .services__card-title {
   margin-bottom: 0.6rem;
 }
